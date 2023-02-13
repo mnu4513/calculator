@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import {Button} from 'react-bootstrap'
 
 const Div = () => {
     const [primary, setPrimary] = useState(null)
@@ -15,14 +16,14 @@ const Div = () => {
         setDiv(res)
     }
   return (
-    <div>
-      Restlt: {div}
+    <div id='comp-body'>
+      Result: {div}
       <br/> <br/>
-      <input type="number" placeholder='Please enter a number' onChange={handlePrimary} />
+      <input type="number" placeholder='Please enter a number' onChange={handlePrimary} className='form-control'/>
       <br/> <br/>
-      <input type="number" placeholder='Please enter a number' onChange={handleSecondary} />
+      <input type="number" placeholder='Please enter a number' onChange={handleSecondary} className='form-control'/>
       <br/> <br/>
-      <button type='submit' onClick={() => result()} >Submit</button>
+      <Button type='submit' onClick={() => result()} >Submit</Button>
     </div>
   )
 }

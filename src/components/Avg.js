@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import {Button} from 'react-bootstrap'
 
 
 const Avg = () => {
@@ -17,15 +18,15 @@ const [avg, setAvg] = useState(null)
         setAvg(res);
     }
   return (
-    <>
-    Restlt : {avg}
+    <div id='comp-body'>
+    Result : {avg}
     <br/>
-      <input type="number" placeholder="Please enter a number" onChange={handlePrimary} />
+      <input type="number" placeholder="Please enter a number" onChange={handlePrimary} className='form-control'/>
       <br/>
-      <input type="number" placeholder="Please enter a number" onChange={handleSecondary} />
+      <input type="number" placeholder="Please enter a number" onChange={handleSecondary} className='form-control'/>
       <br/>
-      <button type="submit" onClick={() => result()} >Submit</button>
-    </>
+      <Button type="submit" onClick={() => result()} >Submit</Button>
+    </div>
   )
 }
 

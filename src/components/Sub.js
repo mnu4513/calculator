@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import {Button} from 'react-bootstrap'
 
 const Sub = () => {
     const [primary, setPrimary] = useState(null) 
@@ -18,16 +19,16 @@ const Sub = () => {
         setSub(res)
     }
   return (
-    <div>
+    <div id='comp-body'>
         Absolute result: {absSub}
         <br/> 
-      Exact restlt: {sub} 
+      Exact result: {sub} 
       <br/> <br/>
-      <input type="number" placeholder='Please enter a number' onChange={handlePrimary} />
+      <input type="number" placeholder='Please enter a number' onChange={handlePrimary} className='form-control'/>
       <br/> <br/>
-      <input type="number" placeholder='Please enter a number' onChange={handleSecondary} />
+      <input type="number" placeholder='Please enter a number' onChange={handleSecondary} className='form-control'/>
       <br/> <br/>
-      <button type='submit' onClick={() => result()} >Submit</button>
+      <Button type='submit' onClick={() => result()} >Submit</Button>
     </div>
   )
 }

@@ -15,7 +15,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,15 +24,25 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* #app-body {
+  background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/04/Simple-backgrounds-for-desktop-download.jpg");
+} */
+#comp-body {
+  background-color: #dbeaec;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(15, 14, 14);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#home-body {
+  background-image: url("./images/underConstruction.avif");
+  min-height: 200vh;
+}
+#page-not-body {
+  background-image: url("./images/underConstruction.avif");
+  /* background-image: url("./images/page404.webp"); */
+  min-height: 200vh;
 }

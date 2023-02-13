@@ -1,12 +1,13 @@
-
+import '../App.css';
 
 import React from 'react'
-import Avg from './Avg'
 
 const Home = () => {
   return (
-    <div>
-        <h1>This is home component</h1>
+    <div id='home-body' >
+        <h1>Welcome to our website
+        </h1>
+        <h3>website is under construction </h3>
         
     </div>
   )
